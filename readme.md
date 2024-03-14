@@ -40,7 +40,7 @@ The connection pool is devised to avoid following question:
 
 using method example in test.TestConnPool
 
-###### Revise
+###### Details
 
 1. avoid multi-Thread concurrent problems while getting connections.
 2. using static proxy to restore the similating using methods in origin JDBC operation.
@@ -95,7 +95,7 @@ public class UserMapper{
 4. Then the ```getUserList``` method is callable in service layer.
 
 
-###### Revise
+###### Details
 ![ORM.png](https://i.loli.net/2021/04/25/ysQzv2xVwZN8MBo.png)
 1. using template schema to diminish code redundancy
 2. Convert multi-line JDBC operations to one line(update,insert,delete,selectOne,selectList)
