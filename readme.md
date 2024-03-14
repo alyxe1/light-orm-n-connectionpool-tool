@@ -1,12 +1,15 @@
-### A Simple Connection Pool and a Semi-automatic Persistence Layer ORM Framework
+### A lightweight Connection Pool and a Semi-automatic Persistence Layer ORM Framework
 [toc]
-[https://github.com/Fickle519/simple-connection-pool.git]
-Author: Xuanhe Er from Chengdu University of Information Technology(CUIT)
+
+[https://github.com/alyxe1/light-orm-n-connectionpool-tool.git]
+Author: Er Xuanhe from University of Nottingham
 
 #### Simple Connection Pool
 
 The connection pool is devised to avoid following question:
 1. building a connection is a costing time scope in JDBC.
+2. saving space of creating much more Threads.
+3. Make Threads managed by the pool.
 
 ##### Quick Test
 
@@ -37,9 +40,9 @@ The connection pool is devised to avoid following question:
 
 using method example in test.TestConnPool
 
-###### Divise
+###### Revise
 
-1. avoid multi-Thread Concurrent problems while getting connections.
+1. avoid multi-Thread concurrent problems while getting connections.
 2. using static proxy to restore the similating using methods in origin JDBC operation.
 3. Default Adapter Pattern to Selective inherit  methods in upper interface.
 4. using native configuration file to modify the configuration working for the pool.
@@ -92,7 +95,7 @@ public class UserMapper{
 4. Then the ```getUserList``` method is callable in service layer.
 
 
-###### Divise
+###### Revise
 ![ORM.png](https://i.loli.net/2021/04/25/ysQzv2xVwZN8MBo.png)
 1. using template schema to diminish code redundancy
 2. Convert multi-line JDBC operations to one line(update,insert,delete,selectOne,selectList)
